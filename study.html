@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>作业</title>
+		<style type="text/css">
+			body{
+				background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1604381809130&di=b7481684b183f0ff5a9d4b95728c31ad&imgtype=0&src=http%3A%2F%2Fimg.51miz.com%2FElement%2F00%2F64%2F92%2F04%2Fc59eaa19_E649204_12ad3920.jpg%2521%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue%2Fformat%2Fjpg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				height: auto;
+			}
+			table{
+				background-color: blanchedalmond;
+				border-collapse: collapse;
+				margin: auto;
+				margin-top: 100px;
+				margin-bottom: 30%;
+			}
+			tr td,th{
+				border: 1.5px solid black;				
+			}
+			tr th{
+				font-size: 28px;
+				font-family: 黑体;
+				color: darkgreen;
+			}
+			tr th:hover{
+				background-color: lightgray;
+				font-size: 36px;
+				text-decoration: underline;
+				color: darkviolet;
+			}
+			tr td{
+				height: 38px;
+			}
+			tr td:hover{
+				height: 38px;
+				background-color: lightblue;
+				font-weight: 900;
+				font-family: 楷体;
+			}
+			td+td{
+				background-color: ivory;
+			}
+			td+td:hover{
+				background-color: lightgreen;
+			}
+			.input-text{
+				text-align: center;
+			}
+			.reset_and_submit_button{
+				margin: 0px 3px;
+			}
+			input[type="reset"],input[type="submit"]{
+				font-size: 18px;
+			}
+			input[type="reset"]:hover,input[type="submit"]:hover{
+				background-color: #7FFF00;
+				font-family: 楷体;
+				font-size: 26px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" method="">
+			<table class="tabale"  border="2" width="500" height="410">
+				<tr>
+					<th colspan="2">学生登记报名表</th>
+				</tr>
+				<tr>
+					<td width="150" height="30">用户名</td>
+					<td class="input-text"><input type="text" id="admin" value=""/></td>
+				</tr>
+				<tr>
+					<td width="150" height="30">密码</td>
+					<td class="input-text"><input type="password" id="pwd" value=""/></td>
+				</tr>
+				<tr>
+					<td width="150" height="30">密码确认</td>
+					<td class="input-text"><input type="password" id="pwd_1" value=""/></td>
+				</tr>
+				<tr>
+					<td width="150" height="30">性别</td>
+					<td><input type="radio" name="sex" id="boy" value="boy" />男 <input type="radio" name="sex" id="girl" value="girl" />女</td>
+				</tr>
+				<tr>
+					<td width="150" height="30">选择科目</td>
+					<td>
+						<div class="mui-input-row mui-checkbox ">
+							<input name="Subject" type="checkbox" value="html"><label>html</label>
+							<input name="Subject" type="checkbox" value="python"><label>python</label>
+							<input name="Subject" type="checkbox"value="linux"><label>linux</label>
+							<input name="Subject" type="checkbox"value="mysql"><label>mysql</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="150" height="30">选择学校</td>
+					<td>
+						<select id='one_select'>
+							<option id="seltec" value ="school">-选择就读的学校-</option>
+							<option id="qinghua" value ="清华">清华大学</option>
+							<option id="beijing" value ="北京">北京大学</option>
+							<option id="hafo" value ="哈佛">哈佛大学</option>
+							<option id="jialidun" value ="加里敦">加里敦大学</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td width="150" height="30">选择文件</td>
+					<td><input id="file_number" type="file" name="" id="" value="" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="reset" value="重置" class="reset_and_submit_button"/><input type="submit" id="" name="" class="reset_and_submit_button"/></td>
+				</tr>
+			</table>
+		</form>
+		
+	</body>
+</html>
